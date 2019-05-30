@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    
+    <header>
+        <title>Joke Generator</title>
+    </header>
+    <link rel="stylesheet" href="./style.css" />
+    <img class="home" src="Mainpic.jpg" alt="mountains">
+    <h1>Hello and Welcome to Joke Generator V2</h1>
+    <body>
+        <div id= "app">
+                <form v-on:submit.prevent="addJoke">
+                        <input class="center" v-model="name" placeholder="Name"></p>
+                        <textarea class="center" v-model="joke" placeholder="Enter Joke Here"></textarea>
+                        <br />
+                        <button class="center" type="submit">Submit Joke</button>
+                </form>
+                <form v-on:submit.prevent="showJoke">
+                    <button class="center" type="submit">Show a Random Joke</button>
+                </form>
+                <div v-for="joke in jokes[randomNum]">
+                        <h3>{{joke.text}}</h3>
+                        <p>-{{joke.author}}</p>
+                </div>
+                <footer><a class="center" href="https://github.com/byu-cs-260-spring-2019/lab-3-creating-a-vue-xkcd-browser-lt49swegger"> My GitHub</a></footer>
+                
+        </div> 
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./script.js"></script>
+    </body>
+</html> 

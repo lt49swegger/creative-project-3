@@ -1,0 +1,30 @@
+body{
+    background-color: gray
+}
+h1{
+    color:white;
+    height: 60px;
+    width: 600px;
+    margin: 0 auto;
+}
+h3{
+    color:white;
+    
+    width: 200px;
+    margin: 0 auto;
+}
+p{
+    color:white;
+    font-style:"Times New Roman", Times, serif;
+    width: 200px;
+    margin: 0 auto;
+}
+.center{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+.home{
+    height: 50%;
+    width: 100%;
+}
